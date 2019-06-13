@@ -1,6 +1,7 @@
 README
 Created Wed Jul 31 10:27:45 AKDT 2002
   by Raymond E. Marcil
+
   
 This is a very simple generic stack ADT that I developed
 for use with the JAVA native method.  This stack 
@@ -28,3 +29,25 @@ the data container and the stackPrint() requires a printer() function
 that prints the data container.  See the main.c example program for
 details on created the functions and function pointers.
  
+
+Filelist
+========
+main.c
+  Test driver for Stack ADT
+  This is a quick test driver for the stack ADT.
+  It show the basic usage of the ADT.
+
+Makefile
+  Makefile to build stack ADT
+
+stack.c
+  This is a very simple generic stack ADT that I developed
+  for use with the JAVA native method.  This stack 
+  will push/pop generic data containers through the 
+  use of void * pointers.  The stack uses a dummy head node 
+  to point to the stack. Pushed nodes are inserted
+  between the dummy head and the first node. 
+  Nothing fancy here.
+
+stack.h
+  Header file for simple stack ADT
