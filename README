@@ -1,0 +1,30 @@
+README
+Created Wed Jul 31 10:27:45 AKDT 2002
+  by Raymond E. Marcil
+  
+This is a very simple generic stack ADT that I developed
+for use with the JAVA native method.  This stack 
+will push/pop generic data containers through the 
+use of void * pointers.  The stack uses a dummy head node 
+to point to the stack. Pushed nodes are inserted
+between the dummy head and the first node. 
+Nothing fancy here.
+
+The main.c program shows an example of basic usage and
+was used for testing the stack ADT.
+
+The following functions are supported:
+  stackCreate()      Create a New stack
+  stackDestroy()     Destroy the stack
+  stackEmpty()       Check if the stack is empty
+  stackTop()         Return pointer to data on top of stack.
+  stackPush()        Push data onto stack.
+  stackPop()         Pop data off of stack.
+  stackPrint()       Print data on the stack.
+  stackCount()       Return number of nodes in stack. 
+  
+The stackDestroy() function requires a destructor that deallocates
+the data container and the stackPrint() requires a printer() function
+that prints the data container.  See the main.c example program for
+details on created the functions and function pointers.
+ 
